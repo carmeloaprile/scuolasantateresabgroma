@@ -1,0 +1,1 @@
+Caricare qui i PDF del menu mensile con nome AAAA-MM-infanzia.pdf e AAAA-MM-primaria.pdf (es. 2026-11-infanzia.pdf). Aggiornare le opzioni del select in servizi.html.
