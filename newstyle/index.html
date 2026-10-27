@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scuola Santa Teresa del Bambino Gesù · Infanzia e Primaria a Roma</title>
+  <meta name="description" content="Scuola Paritaria dell'Infanzia e Primaria a Roma: un luogo accogliente dove crescere, imparare e giocare. Iscrizioni aperte.">
+
+  <!-- Google Fonts: Fredoka per i titoli, Nunito per il testo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Link di accessibilità: salta al contenuto -->
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <!-- ============================================================
+       SPRITE SVG: tutte le icone inline, riutilizzabili con <use>
+       ============================================================ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Matita -->
+      <symbol id="ico-matita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+      </symbol>
+      <!-- Libro -->
+      <symbol id="ico-libro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </symbol>
+      <!-- Foglia -->
+      <symbol id="ico-foglia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.5 5-6"/>
+      </symbol>
+      <!-- Mela (mensa) -->
+      <symbol id="ico-mela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 7c-1.5-1.5-4-2-6 0-3 3-1 9 1 12 1.5 2 3 2 5 1 2 1 3.5 1 5-1 2-3 4-9 1-12-2-2-4.5-1.5-6 0Z"/><path d="M12 7c0-2 1-3.5 3-4"/>
+      </symbol>
+      <!-- Fumetto (inglese) -->
+      <symbol id="ico-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/>
+      </symbol>
+      <!-- Sole (logo) -->
+      <symbol id="ico-sole" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+      </symbol>
+      <!-- Freccia -->
+      <symbol id="ico-freccia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </symbol>
+      <!-- Cuore -->
+      <symbol id="ico-cuore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="Scuola Santa Teresa, home">
+        <span class="logo__badge"><svg><use href="#ico-sole"/></svg></span>
+        <span class="logo__text">Scuola <strong>Santa Teresa</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a class="nav__link is-active" href="#" aria-current="page">Home</a>
+        <a class="nav__link" href="#chi-siamo">Chi Siamo</a>
+        <a class="nav__link" href="#offerta">Offerta Formativa</a>
+        <a class="nav__link" href="#servizi">Servizi</a>
+        <a class="nav__link" href="#contatti">Contatti</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header__cta" href="#contatti">Prenota una visita</a>
+    </div>
+  </header>
+
+  <main id="contenuto">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="eyebrow">Scuola Paritaria dell'Infanzia e Primaria · Roma</span>
+          <h1>Un posto dove <span class="evidenza">crescere felici</span>, un giorno alla volta.</h1>
+          <p class="lead">Accogliamo i bambini dai 3 agli 11 anni in un ambiente sereno e familiare: inglese ogni giorno, mensa interna controllata e tanto spazio per giocare all'aria aperta.</p>
+          <div class="hero__cta">
+            <a class="btn btn--secondary btn--lg" href="#contatti">Iscrizioni Aperte</a>
+            <a class="btn btn--outline btn--lg" href="#offerta">Esplora i Corsi <svg class="btn__icon"><use href="#ico-freccia"/></svg></a>
+          </div>
+          <ul class="hero__badges" aria-label="In breve">
+            <li>Dal 1950 a Roma</li>
+            <li>Pre-scuola gratuito dalle 7:30</li>
+            <li>Cambridge Preparation Center</li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
+               alt="Bambini sorridenti in classe alzano la mano con la maestra"
+               width="1000" height="750" loading="eager">
+          <!-- Bollino decorativo flottante -->
+          <figcaption class="hero__pill">
+            <svg><use href="#ico-cuore"/></svg>
+            <span><strong>Piccoli gruppi</strong><small>attenzione a ogni bambino</small></span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Onda decorativa che chiude l'hero -->
+      <div class="onda onda--hero" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,120 1440,40 L1440,120 L0,120 Z" fill="#F8F9FA"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURES / CARD
+         ============================================================ -->
+    <section class="section" id="offerta">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Perché sceglierci</span>
+          <h2>Tre buoni motivi (e molti altri da scoprire)</h2>
+          <p class="lead">Ogni giornata è pensata per far stare bene i bambini: a tavola, in aula e in giardino.</p>
+        </header>
+
+        <div class="grid grid--3">
+
+          <!-- Card 1: Mensa -->
+          <article class="card card--menta">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=600&q=80"
+                   alt="Piatto colorato di verdure fresche" width="600" height="600" loading="lazy">
+            </div>
+            <div class="card__icon"><svg><use href="#ico-mela"/></svg></div>
+            <h3>Mensa Biologica</h3>
+            <p>Cucina interna con prodotti freschi e biologici, menù stagionali approvati e attenzione a intolleranze e allergie.</p>
+            <a class="card__link" href="#servizi">Scopri il menù <svg><use href="#ico-freccia"/></svg></a>
+          </article>
+
+          <!-- Card 2: Inglese -->
+          <article class="card card--cielo">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&h=600&q=80"
+                   alt="Bambina che impara con un libro e un tablet" width="600" height="600" loading="lazy">
+            </div>
+            <div class="card__icon"><svg><use href="#ico-chat"/></svg></div>
+            <h3>Laboratorio d'Inglese</h3>
+            <p>Inglese quotidiano fin dall'Infanzia, con insegnante madrelingua e certificazioni Cambridge alla Primaria.</p>
+            <a class="card__link" href="#offerta">Il percorso Cambridge <svg><use href="#ico-freccia"/></svg></a>
+          </article>
+
+          <!-- Card 3: Spazi verdi -->
+          <article class="card card--sole">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=600&h=600&q=80"
+                   alt="Bambini che giocano all'aperto su un prato" width="600" height="600" loading="lazy">
+            </div>
+            <div class="card__icon"><svg><use href="#ico-foglia"/></svg></div>
+            <h3>Ampi Spazi Verdi</h3>
+            <p>Un grande giardino con orto didattico e area giochi: ogni giorno tempo all'aria aperta, con qualsiasi stagione.</p>
+            <a class="card__link" href="#servizi">Vedi gli spazi <svg><use href="#ico-freccia"/></svg></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIVISORE A ONDA
+         Come funziona: un <div class="onda"> contiene un SVG con
+         viewBox 1440x120 e preserveAspectRatio="none", così l'onda si
+         stira per tutta la larghezza senza deformare l'altezza.
+         Il "fill" del path deve essere dello stesso colore della
+         sezione che SEGUE l'onda: così sembra che la sezione successiva
+         "entri" morbidamente in quella precedente.
+         ============================================================ -->
+    <div class="onda" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C180,110 360,110 540,60 C720,10 900,10 1080,60 C1260,110 1350,100 1440,60 L1440,120 L0,120 Z" fill="#E8F1FC"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         CHI SIAMO (sezione azzurra chiara, dopo l'onda)
+         ============================================================ -->
+    <section class="section section--cielo" id="chi-siamo">
+      <div class="container split">
+        <figure class="split__media">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80"
+               alt="Bambini seduti ai banchi mentre lavorano insieme" width="900" height="650" loading="lazy">
+        </figure>
+        <div class="split__text">
+          <span class="eyebrow">Chi siamo</span>
+          <h2>Una scuola che è prima di tutto una casa</h2>
+          <p>Gestita dalle Suore Carmelitane Missionarie, la nostra scuola unisce una tradizione educativa solida a metodi moderni. Classi poco numerose, insegnanti stabili e un dialogo continuo con le famiglie.</p>
+          <ul class="lista-check">
+            <li><svg><use href="#ico-matita"/></svg> Continuità Infanzia → Primaria nello stesso edificio</li>
+            <li><svg><use href="#ico-libro"/></svg> Laboratori di musica, teatro, coding e arte</li>
+            <li><svg><use href="#ico-cuore"/></svg> Pre-scuola gratuito e post-scuola fino alle 18:00</li>
+          </ul>
+          <a class="btn btn--primary" href="#contatti">Vieni a conoscerci</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onda di ritorno verso lo sfondo panna -->
+    <div class="onda onda--cielo" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,80 C240,20 480,20 720,70 C960,120 1200,110 1440,50 L1440,120 L0,120 Z" fill="#F8F9FA"/>
+      </svg>
+    </div>
+
+    <!-- ============================================================
+         SERVIZI (fascia rapida)
+         ============================================================ -->
+    <section class="section" id="servizi">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Servizi</span>
+          <h2>Pensati per le famiglie</h2>
+        </header>
+        <div class="grid grid--4">
+          <a class="servizio" href="#"><strong>7:30 → 18:00</strong><span>Pre e post-scuola</span></a>
+          <a class="servizio" href="#"><strong>Menù mensile</strong><span>Scaricabile in PDF</span></a>
+          <a class="servizio" href="#"><strong>Registro online</strong><span>Area genitori</span></a>
+          <a class="servizio" href="#"><strong>Centri estivi</strong><span>Giugno e luglio</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINALE / CONTATTI
+         ============================================================ -->
+    <section class="section cta" id="contatti">
+      <div class="container cta__box">
+        <div>
+          <h2>Vieni a trovarci</h2>
+          <p>Le visite si svolgono su appuntamento individuale, tutto l'anno. Ti accompagniamo noi tra aule, giardino e mensa.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--secondary btn--lg" href="mailto:segreteria.stbg@gmail.com">Prenota una visita</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+390666416144">Chiama la segreteria</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Scuola Santa Teresa del Bambino Gesù · Roma</p>
+      <nav aria-label="Link legali">
+        <a href="#">Privacy</a> · <a href="#">Cookie</a> · <a href="#">Note legali</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
