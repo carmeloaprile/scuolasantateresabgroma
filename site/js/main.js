@@ -25,10 +25,12 @@
     );
   }
 
-  // Current page highlight
+  // Current page highlight (href may be prefixed with "site/" or "../")
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav a, .drawer a").forEach((a) => {
-    if (a.getAttribute("href") === path) a.setAttribute("aria-current", "page");
+    const href = a.getAttribute("href") || "";
+    const target = href === "./" ? "index.html" : href.split("/").pop();
+    if (target === path) a.setAttribute("aria-current", "page");
   });
 
   // Tabs
