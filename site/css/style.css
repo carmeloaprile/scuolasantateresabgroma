@@ -692,3 +692,49 @@ h1, h2, h3, h4 { font-weight: 600; }
   .hero-badge { animation: none; }
   .btn, .card, .service, .poster, .nav a, .brand__mark, .photo--img img, .hero-media .photo { transition: none; }
 }
+
+/* =====================================================================
+   HERO A TUTTA LARGHEZZA — foto di sfondo con testo sovrapposto
+   ===================================================================== */
+.hero--full {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: clamp(560px, 82vh, 820px);
+  display: flex; align-items: center;
+  background: var(--blu-900);
+}
+/* La foto riempie tutta la sezione, centrata */
+.hero--full .hero__bg {
+  position: absolute; inset: 0; z-index: -2;
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+}
+/* Velatura scura sfumata da sinistra (dove sta il testo) verso destra */
+.hero--full::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(20,40,70,.82) 0%, rgba(20,40,70,.62) 42%, rgba(20,40,70,.18) 75%, rgba(20,40,70,.05) 100%),
+    linear-gradient(180deg, rgba(20,40,70,.25) 0%, transparent 30%, transparent 60%, rgba(20,40,70,.55) 100%);
+}
+.hero--full .hero-inner { grid-template-columns: 1fr; padding: clamp(64px, 9vw, 120px) 0 clamp(96px, 12vw, 150px); position: relative; }
+.hero--full .hero__content { max-width: 640px; }
+
+/* Testi in bianco sopra la foto */
+.hero--full h1 { color: var(--white); text-shadow: 0 2px 20px rgba(0,0,0,.25); }
+.hero--full h1 em { color: var(--oro-500); background: none; padding: 0; text-shadow: 0 2px 20px rgba(0,0,0,.35); }
+.hero--full .lead { color: rgba(255,255,255,.92); }
+.hero--full .eyebrow { color: var(--white); background: rgba(255,255,255,.18); backdrop-filter: blur(6px); }
+.hero--full .hero-trust { color: var(--white); }
+.hero--full .hero-trust span { background: rgba(255,255,255,.14); backdrop-filter: blur(6px); padding: 6px 12px; border-radius: 999px; }
+.hero--full .hero-trust svg { color: var(--salvia-500); }
+.hero--full .btn--outline { background: rgba(255,255,255,.12); color: var(--white); border-color: rgba(255,255,255,.7); backdrop-filter: blur(6px); }
+.hero--full .btn--outline:hover { background: var(--white); color: var(--blu-700); }
+
+/* Badge galleggiante in basso a destra */
+.hero--full .hero-badge { left: auto; right: 0; bottom: clamp(40px, 6vw, 72px); max-width: 300px; }
+
+@media (max-width: 860px) {
+  .hero--full { min-height: 0; }
+  .hero--full::before { background: linear-gradient(180deg, rgba(20,40,70,.70) 0%, rgba(20,40,70,.78) 100%); }
+  .hero--full .hero-badge { position: static; margin-top: 24px; max-width: none; width: fit-content; left: auto; }
+  .hero--full .hero-badge small { display: inline; }
+  .hero--full .hero-inner { padding-bottom: 72px; }
+}
