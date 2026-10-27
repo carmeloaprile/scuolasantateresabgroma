@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servizi e Vita Scolastica · Mensa, Orari e Registro · Scuola Santa Teresa del Bambino Gesù Roma</title>
+  <meta name="description" content="Mensa con pasti freschi e controlli HACCP, menù mensile scaricabile, orari di Infanzia e Primaria, pre e post-scuola, Area Genitori con registro elettronico e avvisi.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Icone riutilizzabili -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="3"/><circle cx="19" cy="18" r="3"/><path d="M5 9v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3.4 1-4.5 2.5C10.9 4 9.3 3 7.5 3A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.7 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.7-1.7 1.7-1.7H16c3.3 0 6-2.7 6-6 0-4.9-4.5-8.4-10-8.4z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-sport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12M6 20h12M8 4v16M16 4v16M4 9h4M16 9h4M4 15h4M16 15h4"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-child" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+</svg>
+
+<!-- ===== HEADER FISSO ===== -->
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar__info"><svg><use href="#i-phone"/></svg> Segreteria 06 66416144 · lun–ven 8:00–13:00</span>
+      <div class="topbar__links">
+        <a class="topbar__link topbar__link--menu" href="servizi.html#mensa"><svg><use href="#i-food"/></svg> Menù Mensile</a>
+        <a class="topbar__link topbar__link--registro" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener"><svg><use href="#i-book"/></svg> Registro Elettronico</a>
+      </div>
+    </div>
+  </div>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/logo.png" alt="Logo Suore Carmelitane Missionarie">
+      <span class="brand__text">
+        <span class="brand__name">Santa Teresa del Bambino Gesù</span>
+        <span class="brand__sub">Scuola Paritaria Infanzia e Primaria · Roma</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="index.html">Home</a>
+      <a href="offerta-formativa.html">Offerta Formativa</a>
+      <a href="servizi.html">Servizi e Vita Scolastica</a>
+      <a href="attivita.html">Attività e Laboratori</a>
+      <a href="eventi.html">Eventi e Novità</a>
+      <a href="rette-contatti.html">Rette e Contatti</a>
+    </nav>
+    <div class="quick">
+      <a class="btn btn--primary btn--cta" href="index.html#openday">Prenota una Visita</a>
+    </div>
+    <button class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="offerta-formativa.html">Offerta Formativa</a>
+  <a href="servizi.html">Servizi e Vita Scolastica</a>
+  <a href="attivita.html">Attività e Laboratori</a>
+  <a href="eventi.html">Eventi e Novità</a>
+  <a href="rette-contatti.html">Rette e Contatti</a>
+  <a class="btn btn--blu" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener">Registro Elettronico</a>
+  <a class="btn btn--outline" href="servizi.html#mensa">Menù Mensile</a>
+  <a class="btn btn--primary" href="index.html#openday">Prenota una Visita / Open Day</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Servizi e Vita Scolastica</div>
+      <h1>Servizi e Vita Scolastica</h1>
+      <p class="lead">Mensa, orari, registro elettronico e avvisi: tutto ciò che serve alle famiglie, sempre a portata di mano.</p>
+      <div class="flex mt-3">
+        <a class="btn btn--primary" href="#mensa">Menù del mese</a>
+        <a class="btn btn--ghost-light" href="#orari">Orari e calendario</a>
+        <a class="btn btn--ghost-light" href="#genitori">Area Genitori</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENSA -->
+  <section class="section" id="mensa">
+    <div class="container">
+      <div class="split mb-6">
+        <div class="reveal">
+          <span class="eyebrow">Ristorazione</span>
+          <h2>La nostra mensa: pasti freschi, controllati, serviti con cura</h2>
+          <p class="lead">Da circa vent'anni il servizio è affidato a <strong>Happy Catering di Rita Gioieni</strong>, azienda con trent'anni di esperienza nella ristorazione scolastica. I pasti arrivano ogni giorno dal centro cottura, vicinissimo alla scuola, e vengono serviti dalle insegnanti e dalle suore, che pranzano e assaggiano insieme ai bambini.</p>
+          <ul class="checklist">
+            <li><svg><use href="#i-check"/></svg><span><strong>Materie prime tracciate</strong> da fornitori romani selezionati e marchi riconosciuti</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Menù differenziati</strong> per Infanzia e Primaria, su 4 settimane, invernale ed estivo</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Diete speciali</strong> per allergie, intolleranze e motivi etico-religiosi, con certificato medico</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Doppio controllo</strong>: autocontrollo HACCP del fornitore e ispezioni a sorpresa di ASL e NAS</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Educazione alimentare</strong>: il pranzo è anche un momento educativo, insieme alle insegnanti</span></li>
+          </ul>
+          <a class="btn btn--outline" href="#fornitore">Scopri come garantiamo la qualità</a>
+        </div>
+        <div class="photo photo--oro reveal" data-caption="Foto: refettorio luminoso, insegnanti a tavola con i bambini"><svg><use href="#i-food"/></svg></div>
+      </div>
+
+      <!-- Trasparenza fornitore -->
+      <div class="supplier mb-6" id="fornitore">
+        <div class="center mb-4 reveal">
+          <span class="eyebrow">Trasparenza</span>
+          <h3>Come garantiamo la qualità dei pasti</h3>
+          <p class="muted" style="max-width:62ch;margin-inline:auto">Informazioni fornite da Happy Catering, partner della scuola per la ristorazione.</p>
+        </div>
+        <div class="grid grid--2 mb-4">
+          <div class="card reveal">
+            <div class="card__icon card__icon--oro"><svg><use href="#i-shield"/></svg></div>
+            <h4>Certificazioni e autocontrollo</h4>
+            <p>L'azienda ottempera al sistema di autocontrollo previsto dai <strong>Reg. CE 852/04 e 853/04</strong> sull'igiene dei prodotti alimentari, con piano HACCP, ispezioni periodiche e campionamenti.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon card__icon--blu"><svg><use href="#i-clock"/></svg></div>
+            <h4>Conservazione degli alimenti</h4>
+            <p>Nel centro cottura sono presenti frigoriferi e attrezzature idonee, dotate di <strong>monitoraggio costante della temperatura</strong>, nel pieno rispetto del piano HACCP.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon card__icon--salvia"><svg><use href="#i-path"/></svg></div>
+            <h4>Trasporto e catena caldo/freddo</h4>
+            <p>I pasti viaggiano su automezzi aziendali sanificati e omologati, in <strong>contenitori d'acciaio inseriti in contenitori isotermici</strong>: le temperature di legge sono garantite fino al momento del consumo. Il centro cottura è a pochi minuti dalla scuola.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon card__icon--oro"><svg><use href="#i-check"/></svg></div>
+            <h4>Controlli igienico-sanitari</h4>
+            <p>Duplice livello di verifica: le <strong>ispezioni e i campionamenti del piano HACCP</strong> e i <strong>controlli a sorpresa di ASL e NAS</strong>. A scuola, suore e insegnanti assistono ai pasti e li assaggiano ogni giorno.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <h4 class="mb-2" style="margin-bottom:12px">Provenienza delle materie prime</h4>
+          <div style="overflow-x:auto">
+            <table class="timetable supplier-table">
+              <thead><tr><th>Categoria</th><th>Fornitori</th><th>Marche</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Frutta e verdura fresche</strong></td><td>Baleno Fruit srl · Roma</td><td>—</td></tr>
+                <tr><td><strong>Carni, uova, affettati, pelati</strong></td><td>Euro Distribuzione 97 srl · Roma, Amadori SpA, Macelleria Campo de' Fiori srl · Roma</td><td>Valfrutta, Fiorucci, Galbani</td></tr>
+                <tr><td><strong>Prodotti surgelati</strong></td><td>Panapesca, Frozen Mega Alimentari</td><td>—</td></tr>
+                <tr><td><strong>Pasta</strong></td><td>Giovinazzo Gruppo Distribuzione Alimentare srl · Roma</td><td>Barilla, Divella</td></tr>
+                <tr><td><strong>Succhi di frutta</strong></td><td>Giovinazzo Gruppo Distribuzione Alimentare srl · Roma</td><td>Sterilgarda</td></tr>
+                <tr><td><strong>Formaggi, burro, latticini</strong></td><td>Giovinazzo Gruppo Distribuzione Alimentare srl · Roma</td><td>Galbani, Bayernland</td></tr>
+                <tr><td><strong>Pane fresco</strong></td><td>Panificio M&amp;M srls</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Widget menù mensile -->
+      <div class="menu-widget reveal" data-menu-widget>
+        <div class="menu-widget__head">
+          <div>
+            <h3 class="mt-0">Menù Mensile della Mensa</h3>
+            <p class="muted" style="margin:0">Seleziona il mese e scarica il PDF per Infanzia o Primaria.</p>
+          </div>
+          <span class="badge-updated">Aggiornato il 28 ottobre 2026</span>
+        </div>
+        <div class="menu-month mb-4">
+          <label for="menu-mese" style="font-weight:800;color:var(--blu-900)">Mese</label>
+          <!-- In produzione: popolare dal CMS; i PDF vanno in site/menu/AAAA-MM-infanzia.pdf e AAAA-MM-primaria.pdf -->
+          <select id="menu-mese">
+            <option value="2026-11" selected>Novembre 2026</option>
+            <option value="2026-10">Ottobre 2026</option>
+            <option value="2026-09">Settembre 2026</option>
+          </select>
+        </div>
+        <div class="grid grid--2">
+          <a class="download" data-menu-link="infanzia" href="#">
+            <div class="download__icon" style="background:var(--salvia-100);color:var(--salvia-600)"><svg><use href="#i-file"/></svg></div>
+            <div><strong>Menù Scuola dell'Infanzia</strong><small><span data-menu-label>Novembre 2026</span> · PDF</small></div>
+            <span class="btn btn--sm btn--blu">Scarica</span>
+          </a>
+          <a class="download" data-menu-link="primaria" href="#">
+            <div class="download__icon" style="background:var(--blu-100);color:var(--blu-700)"><svg><use href="#i-file"/></svg></div>
+            <div><strong>Menù Scuola Primaria</strong><small><span data-menu-label>Novembre 2026</span> · PDF</small></div>
+            <span class="btn btn--sm btn--blu">Scarica</span>
+          </a>
+        </div>
+        <p class="form-note mt-3">Per richiedere una dieta speciale, scrivi a <a href="mailto:segreteria.stbg@gmail.com">segreteria.stbg@gmail.com</a> allegando il certificato medico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORARI -->
+  <section class="section section--crema" id="orari">
+    <div class="container">
+      <div class="center mb-6 reveal">
+        <span class="eyebrow">Orari e calendario</span>
+        <h2>Una giornata a misura di famiglia</h2>
+        <p class="lead">Dalle 7:30 alle 18:00: ingressi flessibili, pre e post-scuola per conciliare lavoro e cura, senza mai lasciare i bambini da soli.</p>
+      </div>
+      <div class="grid grid--2" style="align-items:start">
+        <div class="reveal">
+          <h3>Scuola dell'Infanzia</h3>
+          <table class="timetable">
+            <thead><tr><th>Fascia</th><th>Orario</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Pre-scuola</strong></td><td>7:30 – 8:00</td><td>Su richiesta</td></tr>
+              <tr><td><strong>Ingresso</strong></td><td>8:00 – 9:15</td><td>Accoglienza in sezione</td></tr>
+              <tr><td><strong>Attività e pranzo</strong></td><td>9:15 – 15:30</td><td>Pranzo in mensa 12:00</td></tr>
+              <tr><td><strong>Uscita</strong></td><td>15:30 – 16:00</td><td>Uscita intermedia 13:00</td></tr>
+              <tr><td><strong>Post-scuola</strong></td><td>16:00 – 18:00</td><td>Su richiesta</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="reveal">
+          <h3>Scuola Primaria</h3>
+          <table class="timetable">
+            <thead><tr><th>Fascia</th><th>Orario</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Pre-scuola</strong></td><td>7:30 – 8:10</td><td>Su richiesta</td></tr>
+              <tr><td><strong>Lezioni</strong></td><td>8:10 – 13:00</td><td>Lun – Ven</td></tr>
+              <tr><td><strong>Pranzo e ricreazione</strong></td><td>13:00 – 14:10</td><td>Pranzo in mensa</td></tr>
+              <tr><td><strong>Lezioni / laboratori</strong></td><td>14:10 – 16:10</td><td>Tempo pieno 40h</td></tr>
+              <tr><td><strong>Post-scuola e studio assistito</strong></td><td>16:10 – 18:00</td><td>Su richiesta</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="grid grid--3 mt-6">
+        <div class="card reveal"><div class="card__icon card__icon--oro"><svg><use href="#i-cal"/></svg></div><h3>Calendario 2026/27</h3><p>Inizio lezioni <strong>giovedì 10 settembre</strong>: il 10 e l'11 uscita alle 13:00 senza pranzo, da lunedì 14 settembre orario pieno fino alle 16:00 con mensa. Termine 8 giugno (Primaria) e 30 giugno (Infanzia). Festività secondo il calendario regionale del Lazio.</p><a class="link" href="docs/calendario-scolastico.pdf">Scarica il calendario <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="card reveal"><div class="card__icon card__icon--blu"><svg><use href="#i-clock"/></svg></div><h3>Segreteria</h3><p>Lunedì – Venerdì 8:00 – 13:00. Per appuntamenti pomeridiani scrivi o telefona.</p><a class="link" href="rette-contatti.html#contatti">Contatti <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="card reveal"><div class="card__icon card__icon--salvia"><svg><use href="#i-sun"/></svg></div><h3>Centri estivi</h3><p>Giugno e luglio, 7:30 – 16:30, con possibilità di iscrizione settimanale. Anche per bambini esterni.</p><a class="link" href="attivita.html#estate">Scopri di più <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREA GENITORI -->
+  <section class="section" id="genitori">
+    <div class="container">
+      <div class="center mb-6 reveal">
+        <span class="eyebrow">Area Genitori</span>
+        <h2>Sempre in contatto con la scuola</h2>
+        <p class="lead">Trasparenza e comunicazione quotidiana sono parte del nostro patto educativo. Qui trovi gli strumenti per restare aggiornato.</p>
+      </div>
+      <div class="grid grid--3 mb-6">
+        <a class="card reveal" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener" style="text-decoration:none">
+          <div class="card__icon card__icon--blu"><svg><use href="#i-book"/></svg></div>
+          <h3>Registro Elettronico</h3>
+          <p>Presenze, valutazioni, comunicazioni e giustificazioni. Accesso riservato con le credenziali consegnate dalla segreteria.</p>
+          <span class="btn btn--blu mt-3">Accedi al Registro</span>
+        </a>
+        <div class="card reveal">
+          <div class="card__icon card__icon--oro"><svg><use href="#i-clock"/></svg></div>
+          <h3>Ricevimento insegnanti</h3>
+          <p>Ogni docente riceve su appuntamento in una fascia settimanale dedicata. Prenota tramite registro elettronico o segreteria.</p>
+          <p class="muted" style="font-size:.9rem;margin-top:10px"><strong>Direttrice:</strong> martedì e giovedì 9:00–11:00 su appuntamento.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon card__icon--salvia"><svg><use href="#i-heart"/></svg></div>
+          <h3>Vita della comunità</h3>
+          <p>Feste, celebrazioni, incontri formativi per genitori e momenti di preghiera aperti alle famiglie, durante tutto l'anno.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal">Avvisi recenti</h3>
+      <div class="grid" style="gap:12px">
+        <div class="notice reveal"><time><b>12</b>NOV</time><div><strong>Colloqui individuali Primaria</strong><p>Prenotazione aperta sul registro elettronico fino al 10 novembre. Colloqui in presenza dalle 16:30.</p></div></div>
+        <div class="notice reveal"><time><b>15</b>NOV</time><div><strong>Open Day</strong><p>Porte aperte dalle 10:00 alle 12:30: visita guidata, incontro con la Direttrice e laboratori per i bambini.</p></div></div>
+        <div class="notice reveal"><time><b>01</b>DIC</time><div><strong>Nuovo menù invernale</strong><p>Da dicembre entra in vigore il menù invernale. Scaricabile nella sezione Mensa.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/logo.png" alt="Logo Suore Carmelitane Missionarie">
+          <span class="brand__text"><span class="brand__name">Santa Teresa del Bambino Gesù</span><span class="brand__sub">Scuola Paritaria Infanzia e Primaria</span></span>
+        </a>
+        <p class="mt-3" style="font-size:.95rem">Gestita dalle Suore Carmelitane Missionarie di Santa Teresa del Bambino Gesù, nello spirito educativo di Madre Maria Crocifissa Curcio.</p>
+      </div>
+      <div>
+        <h4>La scuola</h4>
+        <ul>
+          <li><a href="offerta-formativa.html">Offerta Formativa</a></li>
+          <li><a href="offerta-formativa.html#cambridge">Cambridge Preparation Center</a></li>
+          <li><a href="attivita.html">Attività e Laboratori</a></li>
+          <li><a href="eventi.html">Eventi e Novità</a></li>
+          <li><a href="offerta-formativa.html#documenti">PTOF e Regolamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Famiglie</h4>
+        <ul>
+          <li><a href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener">Registro Elettronico</a></li>
+          <li><a href="servizi.html#mensa">Menù Mensile</a></li>
+          <li><a href="servizi.html#orari">Calendario e Orari</a></li>
+          <li><a href="rette-contatti.html#rette">Rette e Agevolazioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li>Via Ilario Alibrandi 23<br>00100 Roma</li>
+          <li><a href="tel:+390666416144">Tel. 06 66416144</a></li>
+          <li><a href="mailto:segreteria.stbg@gmail.com">segreteria.stbg@gmail.com</a></li>
+          <li>Segreteria: lun–ven 8:00–13:00</li>
+        </ul>
+        <h4 class="mt-4">Seguici</h4>
+        <ul class="footer-social">
+          <li><a href="https://www.facebook.com/profile.php?id=100063796260589&amp;locale=it_IT" target="_blank" rel="noopener"><svg><use href="#i-facebook"/></svg> Facebook · La Scuola</a></li>
+          <li><a href="https://www.facebook.com/lefigliedimadrecrocifissaepadrelorenzo?locale=it_IT" target="_blank" rel="noopener"><svg><use href="#i-facebook"/></svg> Facebook · Suore Carmelitane</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Scuola Paritaria Santa Teresa del Bambino Gesù · Roma</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="privacy.html#cookie">Cookie</a> · <a href="note-legali.html">Note legali</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== QUICK BAR MOBILE ===== -->
+<nav class="quickbar" aria-label="Accesso rapido">
+  <a class="is-registro" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener"><svg><use href="#i-book"/></svg>Registro</a>
+  <a class="is-menu" href="servizi.html#mensa"><svg><use href="#i-food"/></svg>Menù</a>
+  <a class="is-cta" href="index.html#openday"><svg><use href="#i-cal"/></svg>Open Day</a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scuola Paritaria Santa Teresa del Bambino Gesù · Infanzia e Primaria · Roma</title>
+  <meta name="description" content="Scuola Paritaria dell'Infanzia e Primaria a Roma, gestita dalle Suore Carmelitane Missionarie. Inglese potenziato Cambridge, mensa con menù controllati, ambiente sicuro e familiare. Prenota una visita.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Icone riutilizzabili -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="3"/><circle cx="19" cy="18" r="3"/><path d="M5 9v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3.4 1-4.5 2.5C10.9 4 9.3 3 7.5 3A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.7 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.7-1.7 1.7-1.7H16c3.3 0 6-2.7 6-6 0-4.9-4.5-8.4-10-8.4z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-sport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12M6 20h12M8 4v16M16 4v16M4 9h4M16 9h4M4 15h4M16 15h4"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-child" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+</svg>
+
+<!-- ===== HEADER FISSO ===== -->
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar__info"><svg><use href="#i-phone"/></svg> Segreteria 06 66416144 · lun–ven 8:00–13:00</span>
+      <div class="topbar__links">
+        <a class="topbar__link topbar__link--menu" href="servizi.html#mensa"><svg><use href="#i-food"/></svg> Menù Mensile</a>
+        <a class="topbar__link topbar__link--registro" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener"><svg><use href="#i-book"/></svg> Registro Elettronico</a>
+      </div>
+    </div>
+  </div>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/logo.png" alt="Logo Suore Carmelitane Missionarie">
+      <span class="brand__text">
+        <span class="brand__name">Santa Teresa del Bambino Gesù</span>
+        <span class="brand__sub">Scuola Paritaria Infanzia e Primaria · Roma</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a href="index.html">Home</a>
+      <a href="offerta-formativa.html">Offerta Formativa</a>
+      <a href="servizi.html">Servizi e Vita Scolastica</a>
+      <a href="attivita.html">Attività e Laboratori</a>
+      <a href="eventi.html">Eventi e Novità</a>
+      <a href="rette-contatti.html">Rette e Contatti</a>
+    </nav>
+    <div class="quick">
+      <a class="btn btn--primary btn--cta" href="#openday">Prenota una Visita</a>
+    </div>
+    <button class="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="offerta-formativa.html">Offerta Formativa</a>
+  <a href="servizi.html">Servizi e Vita Scolastica</a>
+  <a href="attivita.html">Attività e Laboratori</a>
+  <a href="eventi.html">Eventi e Novità</a>
+  <a href="rette-contatti.html">Rette e Contatti</a>
+  <a class="btn btn--blu" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener">Registro Elettronico</a>
+  <a class="btn btn--outline" href="servizi.html#mensa">Menù Mensile</a>
+  <a class="btn btn--primary" href="#openday">Prenota una Visita / Open Day</a>
+</div>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="eyebrow">Suore Carmelitane Missionarie · Roma</span>
+        <h1>Amare, Educare, Orientare: <em>il futuro del tuo bambino</em> inizia qui.</h1>
+        <p class="lead">Una scuola dell'Infanzia e Primaria dove ogni bambino è conosciuto per nome, cresce sereno in un ambiente protetto e impara l'inglese fin dai 3 anni. Con la cura di chi educa da oltre un secolo.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="#openday">Prenota una Visita / Open Day</a>
+          <a class="btn btn--outline btn--lg" href="offerta-formativa.html">Scopri l'Offerta Formativa</a>
+        </div>
+        <div class="hero-trust">
+          <span><svg><use href="#i-check"/></svg> Scuola paritaria riconosciuta</span>
+          <span><svg><use href="#i-check"/></svg> Cambridge Preparation Center</span>
+          <span><svg><use href="#i-check"/></svg> Mensa fresca e controllata</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- Sostituire con foto/video: bambini in giardino con maestre e suore, luce naturale -->
+        <div class="photo" data-caption="Foto: bambini e maestre nel giardino dell'istituto"><svg><use href="#i-child"/></svg></div>
+        <div class="hero-badge">
+          <div class="hero-badge__icon"><svg><use href="#i-shield"/></svg></div>
+          <div><strong>Ambiente sicuro e familiare</strong><small>Classi a misura di bambino, dai 3 agli 11 anni</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BARRA SERVIZI RAPIDI ===== -->
+  <section class="servicebar">
+    <div class="container servicebar-grid">
+      <a class="service service--registro" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener">
+        <div class="service__icon"><svg><use href="#i-book"/></svg></div>
+        <div><strong>Accedi al Registro Elettronico</strong><small>Area riservata alle famiglie</small></div>
+        <svg class="service__arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="service service--menu" href="servizi.html#mensa">
+        <div class="service__icon"><svg><use href="#i-food"/></svg></div>
+        <div><strong>Scarica il Menù del Mese</strong><small>PDF · Infanzia e Primaria</small></div>
+        <svg class="service__arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="service service--calendario" href="servizi.html#orari">
+        <div class="service__icon"><svg><use href="#i-cal"/></svg></div>
+        <div><strong>Calendario Scolastico e Orari</strong><small>Ingressi, uscite, pre e post-scuola</small></div>
+        <svg class="service__arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== PUNTI DI FORZA ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="center mb-6 reveal">
+        <span class="eyebrow">Perché sceglierci</span>
+        <h2>Quattro buoni motivi per cominciare da noi</h2>
+        <p class="lead">Un progetto educativo che unisce tradizione e innovazione, con un'attenzione autentica alla persona di ogni bambino.</p>
+      </div>
+      <div class="grid grid--4">
+        <article class="card reveal">
+          <div class="card__icon card__icon--blu"><svg><use href="#i-globe"/></svg></div>
+          <h3>Cambridge Preparation Center</h3>
+          <p>Inglese potenziato ogni giorno con docenti qualificati e percorso verso le certificazioni Cambridge Young Learners, fin dall'Infanzia.</p>
+          <a class="link" href="offerta-formativa.html#cambridge">Scopri il percorso <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon card__icon--salvia"><svg><use href="#i-path"/></svg></div>
+          <h3>Continuità Educativa</h3>
+          <p>Un percorso armonioso dai 3 agli 11 anni: stesse insegnanti di riferimento, stessi valori, nessun salto nel vuoto tra Infanzia e Primaria.</p>
+          <a class="link" href="offerta-formativa.html#continuita">Come funziona <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon card__icon--oro"><svg><use href="#i-food"/></svg></div>
+          <h3>Mensa Fresca e Controllata</h3>
+          <p>Pasti preparati ogni giorno da Happy Catering, partner della scuola da vent'anni, con menù mensili equilibrati, controlli HACCP e insegnanti che assaggiano e pranzano con i bambini.</p>
+          <a class="link" href="servizi.html#mensa">Vedi il menù <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon card__icon--blu"><svg><use href="#i-heart"/></svg></div>
+          <h3>Valori e Centralità della Persona</h3>
+          <p>Un ambiente sicuro, familiare e accogliente, dove ogni alunno è accompagnato nella crescita umana, spirituale e culturale.</p>
+          <a class="link" href="offerta-formativa.html#valori">I nostri valori <svg><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MESSAGGIO DELLA DIRETTRICE ===== -->
+  <section class="section section--crema">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Il benvenuto della Direttrice</span>
+        <h2>Educare insieme: un'alleanza tra scuola e famiglia</h2>
+        <p class="lead">Nessun bambino cresce da solo. Cresce dentro relazioni di fiducia: con i genitori, con le insegnanti, con i compagni. È questa alleanza il cuore della nostra scuola.</p>
+        <ul class="checklist">
+          <li><svg><use href="#i-check"/></svg><span><strong>Colloqui regolari</strong> e ricevimento settimanale con insegnanti e Direzione</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Comunicazione trasparente</strong> tramite registro elettronico e avvisi</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Famiglie protagoniste</strong> nei momenti di festa, preghiera e condivisione</span></li>
+        </ul>
+        <a class="btn btn--blu" href="servizi.html#genitori">Scopri l'Area Genitori</a>
+      </div>
+      <div class="quote reveal">
+        <blockquote>«Care famiglie, aprire le porte della nostra scuola significa aprire le porte di una casa. Qui, nello spirito di Madre Maria Crocifissa Curcio, vogliamo che ogni bambino si senta amato, ascoltato e incoraggiato a diventare la versione migliore di sé. Educare, per noi, è prima di tutto un atto d'amore condiviso con voi.»</blockquote>
+        <div class="quote-author">
+          <div class="avatar">D</div>
+          <div><strong>La Direttrice</strong><small>Scuola Santa Teresa del Bambino Gesù</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUMERI / FIDUCIA ===== -->
+  <section class="section--tight section--blu">
+    <div class="container">
+      <div class="stats">
+        <div class="stat reveal"><strong>3–11</strong><span>anni, un unico percorso educativo</span></div>
+        <div class="stat reveal"><strong>5h+</strong><span>di inglese a settimana con metodo Cambridge</span></div>
+        <div class="stat reveal"><strong>20</strong><span>anni con lo stesso partner di ristorazione</span></div>
+        <div class="stat reveal"><strong>7:30–18</strong><span>copertura con pre e post-scuola</span></div>
+      </div>
+      <p class="muted center mt-3" style="color:rgba(255,255,255,.55);font-size:.8rem">I dati sono indicativi e vanno confermati dalla segreteria.</p>
+    </div>
+  </section>
+
+  <!-- ===== ATTIVITÀ ED EXTRA-SCOLASTICO ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="center mb-6 reveal">
+        <span class="eyebrow">Oltre la lezione</span>
+        <h2>Laboratori e attività per scoprire i propri talenti</h2>
+        <p class="lead">Musica, teatro, informatica, sport e inglese: ogni bambino ha un modo tutto suo di imparare. Noi gli diamo lo spazio per trovarlo.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card card--photo reveal">
+          <div class="photo photo--oro" data-caption="Foto: lezione d'inglese con docente madrelingua"><svg><use href="#i-globe"/></svg></div>
+          <div class="card__body"><span class="tag">Inglese</span><h3>English Lab Cambridge</h3><p>Conversazione, canzoni e storytelling: l'inglese diventa una lingua viva.</p></div>
+        </article>
+        <article class="card card--photo reveal">
+          <div class="photo photo--salvia" data-caption="Foto: saggio musicale di fine anno"><svg><use href="#i-music"/></svg></div>
+          <div class="card__body"><span class="tag tag--salvia">Musica &amp; Teatro</span><h3>Musica, Teatro e Arte</h3><p>Espressività, ritmo e creatività per imparare a stare davanti agli altri con fiducia.</p></div>
+        </article>
+        <article class="card card--photo reveal">
+          <div class="photo" data-caption="Foto: laboratorio informatico"><svg><use href="#i-laptop"/></svg></div>
+          <div class="card__body"><span class="tag tag--blu">Digitale</span><h3>Coding e Informatica</h3><p>Primi passi nel pensiero computazionale, con strumenti adatti all'età.</p></div>
+        </article>
+        <article class="card card--photo reveal">
+          <div class="photo photo--salvia" data-caption="Foto: attività motoria in palestra"><svg><use href="#i-sport"/></svg></div>
+          <div class="card__body"><span class="tag tag--salvia">Sport</span><h3>Progetti Sportivi</h3><p>Psicomotricità, giochi di squadra e rispetto delle regole, divertendosi.</p></div>
+        </article>
+        <article class="card card--photo reveal">
+          <div class="photo photo--oro" data-caption="Foto: doposcuola con studio assistito"><svg><use href="#i-book"/></svg></div>
+          <div class="card__body"><span class="tag">Doposcuola</span><h3>Studio Assistito</h3><p>Compiti seguiti da insegnanti, per tornare a casa con il pomeriggio libero.</p></div>
+        </article>
+        <article class="card card--photo reveal">
+          <div class="photo" data-caption="Foto: centro estivo in giardino"><svg><use href="#i-sun"/></svg></div>
+          <div class="card__body"><span class="tag tag--blu">Estate</span><h3>Centri Estivi</h3><p>Giugno e luglio tra giochi, gite e laboratori, nello stesso ambiente protetto.</p></div>
+        </article>
+      </div>
+      <div class="center mt-6"><a class="btn btn--outline" href="attivita.html">Tutte le attività e i laboratori</a></div>
+    </div>
+  </section>
+
+  <!-- ===== BACHECA / LOCANDINE ===== -->
+  <section class="section section--crema">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">In bacheca</span>
+        <h2>Cosa succede a scuola questo mese</h2>
+        <p class="lead">Festa d'Autunno, Ottobre Missionario, Holyween e il Calendario della Solidarietà: le iniziative che rendono viva la nostra comunità.</p>
+        <ul class="checklist">
+          <li><svg><use href="#i-check"/></svg><span><strong>24 ottobre</strong> · Festa d'Autunno, 15:00–17:30</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>19–23 ottobre</strong> · Una merenda per un amico</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>31 ottobre</strong> · Holyween, la notte dei Santi e della Luce</span></li>
+        </ul>
+        <a class="btn btn--blu" href="eventi.html">Tutti gli eventi e le locandine</a>
+      </div>
+      <div class="posters posters--home reveal">
+        <a class="poster" href="eventi.html#locandine"><img src="assets/festa_autunno.png" alt="Locandina Festa d'Autunno" loading="lazy"></a>
+        <a class="poster" href="eventi.html#locandine"><img src="assets/merrendexamico.png" alt="Locandina Una merenda per un amico" loading="lazy"></a>
+        <a class="poster" href="eventi.html#locandine"><img src="assets/hoyween.png" alt="Locandina Holyween" loading="lazy"></a>
+        <a class="poster" href="eventi.html#locandine"><img src="assets/calendario_solidarieta.png" alt="Locandina Calendario della Solidarietà" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINALE / OPEN DAY ===== -->
+  <section class="section section--salvia" id="openday">
+    <div class="container">
+      <div class="openday reveal">
+        <div class="openday__text">
+          <span class="eyebrow">Open Day e visite</span>
+          <h2>Vieni a conoscerci di persona</h2>
+          <p class="lead">Le parole raccontano, ma un sorriso all'ingresso vale di più. Visita le aule, il giardino e la mensa, incontra le insegnanti e fai tutte le domande che vuoi.</p>
+          <div class="openday-dates">
+            <div class="date-chip">Sab 15 Nov<small>ore 10:00 · Open Day</small></div>
+            <div class="date-chip">Sab 13 Dic<small>ore 10:00 · Open Day</small></div>
+            <div class="date-chip">Sab 17 Gen<small>ore 10:00 · Open Day</small></div>
+          </div>
+          <ul class="checklist">
+            <li><svg><use href="#i-check"/></svg><span>Visite individuali su appuntamento tutto l'anno</span></li>
+            <li><svg><use href="#i-check"/></svg><span>Iscrizioni aperte per Infanzia e Primaria</span></li>
+          </ul>
+        </div>
+        <form class="openday__form form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <h3>Prenota il tuo posto</h3>
+          <input type="hidden" name="access_key" value="d1e39f30-55c9-43e3-bf3b-6ca5cebaf5fc">
+          <input type="hidden" name="subject" value="Nuova richiesta visita / Open Day dal sito">
+          <input type="hidden" name="from_name" value="Sito Scuola Santa Teresa">
+          <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row">
+            <div class="field"><label for="od-nome">Nome e cognome genitore *</label><input id="od-nome" name="nome" required placeholder="Maria Rossi"></div>
+            <div class="field"><label for="od-tel">Telefono *</label><input id="od-tel" name="telefono" type="tel" required placeholder="+39 333 000 0000"></div>
+          </div>
+          <div class="field"><label for="od-email">Email *</label><input id="od-email" name="email" type="email" required placeholder="maria.rossi@email.it"></div>
+          <div class="form-row">
+            <div class="field"><label for="od-grado">Interessato a *</label>
+              <select id="od-grado" name="grado" required>
+                <option value="">Seleziona…</option>
+                <option>Scuola dell'Infanzia (3–6 anni)</option>
+                <option>Scuola Primaria (6–11 anni)</option>
+                <option>Entrambe</option>
+              </select>
+            </div>
+            <div class="field"><label for="od-data">Data preferita *</label>
+              <select id="od-data" name="data" required>
+                <option value="">Seleziona…</option>
+                <option>Open Day · 15 Novembre</option>
+                <option>Open Day · 13 Dicembre</option>
+                <option>Open Day · 17 Gennaio</option>
+                <option>Visita individuale (vi contattiamo noi)</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="od-msg">Domande o note</label><textarea id="od-msg" name="messaggio" placeholder="Es. età del bambino, esigenze particolari…"></textarea></div>
+          <label class="field--check"><input type="checkbox" name="consenso_privacy" value="Sì" required> <span>Ho letto l'<a href="privacy.html" target="_blank">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato. *</span></label>
+          <div class="h-captcha" data-captcha="true" data-theme="light"></div>
+          <button class="btn btn--primary btn--lg" type="submit">Prenota la visita</button>
+          <p class="form-note">Ti risponderemo entro 1 giorno lavorativo. Nessun impegno.</p>
+          <p class="form-error" role="alert" hidden>Non è stato possibile inviare la richiesta. Riprova tra poco oppure scrivici a <a href="mailto:segreteria.stbg@gmail.com">segreteria.stbg@gmail.com</a> o chiama lo <a href="tel:+390666416144">06 66416144</a>.</p>
+          <div class="form-success" role="status">Grazie! La tua richiesta è stata inviata. La segreteria ti contatterà a breve per confermare la visita.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/logo.png" alt="Logo Suore Carmelitane Missionarie">
+          <span class="brand__text"><span class="brand__name">Santa Teresa del Bambino Gesù</span><span class="brand__sub">Scuola Paritaria Infanzia e Primaria</span></span>
+        </a>
+        <p class="mt-3" style="font-size:.95rem">Gestita dalle Suore Carmelitane Missionarie di Santa Teresa del Bambino Gesù, nello spirito educativo di Madre Maria Crocifissa Curcio.</p>
+      </div>
+      <div>
+        <h4>La scuola</h4>
+        <ul>
+          <li><a href="offerta-formativa.html">Offerta Formativa</a></li>
+          <li><a href="offerta-formativa.html#cambridge">Cambridge Preparation Center</a></li>
+          <li><a href="attivita.html">Attività e Laboratori</a></li>
+          <li><a href="eventi.html">Eventi e Novità</a></li>
+          <li><a href="offerta-formativa.html#documenti">PTOF e Regolamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Famiglie</h4>
+        <ul>
+          <li><a href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener">Registro Elettronico</a></li>
+          <li><a href="servizi.html#mensa">Menù Mensile</a></li>
+          <li><a href="servizi.html#orari">Calendario e Orari</a></li>
+          <li><a href="rette-contatti.html#rette">Rette e Agevolazioni</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li>Via Ilario Alibrandi 23<br>00100 Roma</li>
+          <li><a href="tel:+390666416144">Tel. 06 66416144</a></li>
+          <li><a href="mailto:segreteria.stbg@gmail.com">segreteria.stbg@gmail.com</a></li>
+          <li>Segreteria: lun–ven 8:00–13:00</li>
+        </ul>
+        <h4 class="mt-4">Seguici</h4>
+        <ul class="footer-social">
+          <li><a href="https://www.facebook.com/profile.php?id=100063796260589&amp;locale=it_IT" target="_blank" rel="noopener"><svg><use href="#i-facebook"/></svg> Facebook · La Scuola</a></li>
+          <li><a href="https://www.facebook.com/lefigliedimadrecrocifissaepadrelorenzo?locale=it_IT" target="_blank" rel="noopener"><svg><use href="#i-facebook"/></svg> Facebook · Suore Carmelitane</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Scuola Paritaria Santa Teresa del Bambino Gesù · Roma</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="privacy.html#cookie">Cookie</a> · <a href="note-legali.html">Note legali</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== QUICK BAR MOBILE ===== -->
+<nav class="quickbar" aria-label="Accesso rapido">
+  <a class="is-registro" href="https://nuvola.madisoft.it/login" target="_blank" rel="noopener"><svg><use href="#i-book"/></svg>Registro</a>
+  <a class="is-menu" href="servizi.html#mensa"><svg><use href="#i-food"/></svg>Menù</a>
+  <a class="is-cta" href="#openday"><svg><use href="#i-cal"/></svg>Open Day</a>
+</nav>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
