@@ -1,45 +1,51 @@
 /* =====================================================================
    Scuola "Santa Teresa del Bambino Gesù" — Design System
-   Palette: blu istituzionale · crema warm · oro sabbia · verde salvia
+   Palette: azzurro cielo · giallo sole · verde menta · sfondi panna
+   I nomi delle variabili sono storici (blu/oro/salvia/crema) e vengono
+   mantenuti per non toccare le classi nelle pagine: cambiano solo i valori.
    ===================================================================== */
 
 :root {
-  /* Brand */
-  --blu-900: #152A4D;
-  --blu-700: #1F3A68;
-  --blu-500: #2E4F86;
-  --blu-100: #E3EAF5;
+  /* Brand — azzurro cielo (primario) */
+  --blu-900: #243B53;   /* inchiostro: titoli e testo forte */
+  --blu-700: #4A90E2;   /* azzurro cielo primario */
+  --blu-500: #3572BE;   /* azzurro scuro per hover/focus */
+  --blu-100: #E8F1FC;   /* azzurro chiarissimo di sfondo */
 
-  --crema-50: #FDFBF7;
-  --crema-100: #FBF7F0;
-  --crema-200: #F3EBDD;
-  --crema-300: #E8DCC6;
+  /* Sfondi panna / grigio chiarissimo */
+  --crema-50: #FFFFFF;
+  --crema-100: #F8F9FA;
+  --crema-200: #EEF3F8;
+  --crema-300: #E3E9F0;
 
-  --oro-500: #C9A96E;
-  --oro-600: #B5924F;
-  --oro-100: #F6EEDC;
+  /* Giallo sole (secondario, CTA) */
+  --oro-500: #FFD166;
+  --oro-600: #C98F0A;   /* oro scuro leggibile come testo */
+  --oro-100: #FFF3CF;
 
-  --salvia-500: #7E9C84;
-  --salvia-600: #5F7F67;
-  --salvia-100: #E6EFE7;
+  /* Verde menta (accento) */
+  --salvia-500: #06D6A0;
+  --salvia-600: #04916C; /* menta scura leggibile come testo */
+  --salvia-100: #DDF8EF;
 
-  --ink-900: #22262E;
-  --ink-700: #3C424D;
-  --ink-500: #6B7280;
+  --ink-900: #243B53;
+  --ink-700: #3E5872;
+  --ink-500: #627D98;
   --white: #FFFFFF;
 
-  /* Type */
-  --font-display: "Fraunces", Georgia, serif;
+  /* Type: Fredoka (tondo e amichevole) per i titoli, Nunito per il testo */
+  --font-display: "Fredoka", "Quicksand", system-ui, sans-serif;
   --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* Layout */
+  /* Layout: angoli molto arrotondati, niente spigoli vivi */
   --container: 1180px;
-  --radius-sm: 10px;
-  --radius: 18px;
-  --radius-lg: 28px;
-  --shadow-sm: 0 2px 8px rgba(21, 42, 77, 0.06);
-  --shadow: 0 10px 30px rgba(21, 42, 77, 0.10);
-  --shadow-lg: 0 24px 60px rgba(21, 42, 77, 0.16);
+  --radius-sm: 16px;
+  --radius: 24px;
+  --radius-lg: 32px;
+  --shadow-sm: 0 2px 8px rgba(36, 59, 83, 0.06);
+  --shadow: 0 10px 30px rgba(36, 59, 83, 0.10);
+  --shadow-lg: 0 24px 60px rgba(36, 59, 83, 0.16);
+  --morbida: 320ms cubic-bezier(.2,.8,.2,1);
   --topbar-h: 36px;
   --bar-h: 76px;
   --header-h: calc(var(--topbar-h) + var(--bar-h));
@@ -566,3 +572,123 @@ p { margin: 0 0 1em; }
 .form button[disabled] { opacity: .7; cursor: wait; transform: none; }
 
 .form .h-captcha { margin: 4px 0 8px; }
+
+
+/* =====================================================================
+   NUOVO STILE — override "giocoso" applicati sopra il design system.
+   Tutti i selettori riusano le classi già presenti nelle pagine.
+   ===================================================================== */
+
+/* Titoli e parola evidenziata nell'hero: niente corsivo, evidenziatore giallo */
+h1, h2, h3, h4 { font-weight: 600; }
+.hero h1 em {
+  font-style: normal; color: var(--blu-900);
+  background: linear-gradient(transparent 58%, var(--oro-500) 58%);
+  padding: 0 .12em; border-radius: 6px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Eyebrow a pillola azzurra */
+.eyebrow {
+  font-family: var(--font-display); letter-spacing: .05em; font-weight: 600;
+  color: var(--blu-700); background: var(--blu-100);
+  padding: 6px 14px; border-radius: 999px;
+}
+.section--blu .eyebrow, .page-hero .eyebrow { color: var(--white); background: rgba(255,255,255,.18); }
+
+/* Bottoni: font tondo e micro-interazione con lift + scaling */
+.btn { font-family: var(--font-display); font-weight: 600; transition: transform var(--morbida), box-shadow var(--morbida), background .18s ease, color .18s ease; }
+.btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: var(--shadow); }
+.btn:active { transform: translateY(0) scale(.98); }
+.btn--outline { background: var(--white); }
+.btn svg { transition: transform var(--morbida); }
+.btn:hover svg { transform: translateX(4px); }
+
+/* Navigazione: link attivo come pillola piena azzurra */
+.nav a { transition: background .18s ease, color .18s ease, transform var(--morbida); }
+.nav a:hover { background: var(--blu-100); color: var(--blu-700); transform: translateY(-2px); }
+.nav a[aria-current="page"] { background: var(--blu-700); color: var(--white); }
+.drawer a[aria-current="page"] { color: var(--blu-700); }
+
+/* Logo: piccolo "wobble" al passaggio */
+.brand__mark { transition: transform var(--morbida); }
+.brand:hover .brand__mark { transform: rotate(-6deg) scale(1.06); }
+
+/* Card e tessere: hover con scaling, bordo superiore colorato */
+.card, .service, .poster, .price-card, .timeline-step, .download {
+  transition: transform var(--morbida), box-shadow var(--morbida), border-color .18s ease;
+}
+.card:hover, .service:hover, .poster:hover { transform: translateY(-6px) scale(1.02); box-shadow: var(--shadow-lg); }
+.price-card:hover, .timeline-step:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.card { border-top: 6px solid var(--blu-700); }
+.card:has(.card__icon--salvia), .card:has(.tag--salvia) { border-top-color: var(--salvia-500); }
+.card:has(.card__icon--oro), .card:has(.tag:not(.tag--salvia):not(.tag--blu)) { border-top-color: var(--oro-500); }
+.card--photo { border-top: 0; }
+.card__icon { border-radius: 50%; }
+.service__icon { border-radius: 50%; }
+
+/* Fasce colorate: gradiente azzurro cielo al posto del blu notte */
+.section--blu, .page-hero { background: linear-gradient(135deg, var(--blu-700) 0%, #5FA3F0 100%); }
+.page-hero::after { background: radial-gradient(circle, rgba(255,209,102,.45), transparent 70%); }
+.breadcrumb a { color: var(--oro-500); }
+.stat { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.28); }
+.stat span { color: var(--white); }
+.section--blu .lead, .page-hero .lead { color: rgba(255,255,255,.92); }
+
+/* Sfondo hero: sfumatura azzurro → giallo pallido */
+.hero { background: linear-gradient(160deg, var(--blu-100) 0%, #FFF8E1 100%); }
+
+/* Foto reali dentro i vecchi contenitori .photo:
+   l'immagine riempie il box, il placeholder (icona + didascalia) sparisce */
+.photo--img { background: var(--crema-200); }
+.photo--img > svg, .photo--img::after { display: none; }
+.photo--img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform var(--morbida); }
+.card:hover .photo--img img, .split .photo--img:hover img { transform: scale(1.06); }
+
+/* Immagine hero a forma organica ("blob") che si ammorbidisce all'hover */
+.hero-media .photo {
+  border-radius: 42% 58% 55% 45% / 45% 42% 58% 55%;
+  transition: border-radius var(--morbida), transform var(--morbida);
+}
+.hero-media:hover .photo { border-radius: var(--radius-lg); transform: scale(1.01); }
+.hero-media .photo--img img { transition: none; }
+
+/* Badge hero che galleggia */
+.hero-badge { border-radius: 999px; animation: galleggia 4s ease-in-out infinite; }
+.hero-badge__icon { border-radius: 50%; }
+@keyframes galleggia { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+/* Divisori a onda: SVG largo 100% con preserveAspectRatio="none";
+   il fill del path è il colore della sezione successiva */
+.onda { line-height: 0; position: relative; z-index: 1; }
+.onda svg { display: block; width: 100%; height: clamp(40px, 7vw, 100px); }
+.onda--blu { background: linear-gradient(135deg, var(--blu-700) 0%, #5FA3F0 100%); }
+.onda--crema { background: var(--crema-200); }
+.onda--salvia { background: var(--salvia-100); }
+.onda--base { background: var(--crema-100); }
+.onda + .section { padding-top: clamp(24px, 4vw, 48px); }
+
+/* Form: campi più tondi */
+.field input, .field select, .field textarea { border-radius: var(--radius-sm); }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blu-700); box-shadow: 0 0 0 4px var(--blu-100); }
+.form-success { background: var(--salvia-100); color: var(--salvia-600); }
+
+/* Elementi vari */
+.tag { font-family: var(--font-display); letter-spacing: .04em; }
+.date-chip { border-radius: var(--radius-sm); }
+.notice { border-left-color: var(--blu-700); border-radius: var(--radius-sm); }
+.accordion summary::after { color: var(--blu-700); }
+.quote::before { font-family: Georgia, serif; color: var(--oro-500); opacity: .8; }
+.quote blockquote { font-style: normal; font-family: var(--font-body); font-weight: 600; }
+.timetable th { background: var(--blu-700); }
+.quickbar a { border-radius: 16px; }
+.quickbar a.is-cta { background: var(--oro-500); }
+.hamburger { border-radius: 50%; }
+
+/* Focus visibile per la tastiera */
+:focus-visible { outline: 3px solid var(--oro-500); outline-offset: 3px; border-radius: 12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge { animation: none; }
+  .btn, .card, .service, .poster, .nav a, .brand__mark, .photo--img img, .hero-media .photo { transition: none; }
+}

@@ -8,7 +8,7 @@
   <link rel="icon" href="site/assets/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site/css/style.css">
 </head>
 <body>
@@ -106,7 +106,7 @@
       </div>
       <div class="hero-media">
         <!-- Sostituire con foto/video: bambini in giardino con maestre e suore, luce naturale -->
-        <div class="photo" data-caption="Foto: bambini e maestre nel giardino dell'istituto"><svg><use href="#i-child"/></svg></div>
+        <div class="photo photo--img" data-caption="Bambini e maestre nel giardino dell'istituto"><img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=900&q=80" alt="Bambini e maestre nel giardino dell'istituto" loading="eager"></div>
         <div class="hero-badge">
           <div class="hero-badge__icon"><svg><use href="#i-shield"/></svg></div>
           <div><strong>Ambiente sicuro e familiare</strong><small>Classi a misura di bambino, dai 3 agli 11 anni</small></div>
@@ -198,6 +198,10 @@
   </section>
 
   <!-- ===== NUMERI / FIDUCIA ===== -->
+  <!-- Onda: dalla sezione crema entra il gradiente azzurro -->
+  <div class="onda onda--crema" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,48 C960,96 1200,120 1440,40 L1440,120 L0,120 Z" fill="#4A90E2"/></svg>
+  </div>
   <section class="section--tight section--blu">
     <div class="container">
       <div class="stats">
@@ -206,9 +210,13 @@
         <div class="stat reveal"><strong>20</strong><span>anni con lo stesso partner di ristorazione</span></div>
         <div class="stat reveal"><strong>7:30–18</strong><span>copertura con pre e post-scuola</span></div>
       </div>
-      <p class="muted center mt-3" style="color:rgba(255,255,255,.55);font-size:.8rem">I dati sono indicativi e vanno confermati dalla segreteria.</p>
+      <p class="muted center mt-3" style="color:rgba(255,255,255,.75);font-size:.8rem">I dati sono indicativi e vanno confermati dalla segreteria.</p>
     </div>
   </section>
+  <!-- Onda: dall'azzurro si torna allo sfondo panna -->
+  <div class="onda onda--blu" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,40 C180,110 360,110 540,60 C720,10 900,10 1080,60 C1260,110 1350,100 1440,60 L1440,120 L0,120 Z" fill="#F8F9FA"/></svg>
+  </div>
 
   <!-- ===== ATTIVITÀ ED EXTRA-SCOLASTICO ===== -->
   <section class="section">
@@ -220,27 +228,27 @@
       </div>
       <div class="grid grid--3">
         <article class="card card--photo reveal">
-          <div class="photo photo--oro" data-caption="Foto: lezione d'inglese con docente madrelingua"><svg><use href="#i-globe"/></svg></div>
+          <div class="photo photo--img photo--oro" data-caption="Lezione d'inglese con docente madrelingua"><img src="https://images.unsplash.com/photo-1581726690015-c9861fa5057f?auto=format&fit=crop&w=900&q=80" alt="Lezione d'inglese con docente madrelingua" loading="lazy"></div>
           <div class="card__body"><span class="tag">Inglese</span><h3>English Lab Cambridge</h3><p>Conversazione, canzoni e storytelling: l'inglese diventa una lingua viva.</p></div>
         </article>
         <article class="card card--photo reveal">
-          <div class="photo photo--salvia" data-caption="Foto: saggio musicale di fine anno"><svg><use href="#i-music"/></svg></div>
+          <div class="photo photo--img photo--salvia" data-caption="Saggio musicale di fine anno"><img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=900&q=80" alt="Saggio musicale di fine anno" loading="lazy"></div>
           <div class="card__body"><span class="tag tag--salvia">Musica &amp; Teatro</span><h3>Musica, Teatro e Arte</h3><p>Espressività, ritmo e creatività per imparare a stare davanti agli altri con fiducia.</p></div>
         </article>
         <article class="card card--photo reveal">
-          <div class="photo" data-caption="Foto: laboratorio informatico"><svg><use href="#i-laptop"/></svg></div>
+          <div class="photo photo--img" data-caption="Laboratorio informatico"><img src="https://images.unsplash.com/photo-1541692641319-981cc79ee10a?auto=format&fit=crop&w=900&q=80" alt="Laboratorio informatico" loading="lazy"></div>
           <div class="card__body"><span class="tag tag--blu">Digitale</span><h3>Coding e Informatica</h3><p>Primi passi nel pensiero computazionale, con strumenti adatti all'età.</p></div>
         </article>
         <article class="card card--photo reveal">
-          <div class="photo photo--salvia" data-caption="Foto: attività motoria in palestra"><svg><use href="#i-sport"/></svg></div>
+          <div class="photo photo--img photo--salvia" data-caption="Attività motoria in palestra"><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=80" alt="Attività motoria in palestra" loading="lazy"></div>
           <div class="card__body"><span class="tag tag--salvia">Sport</span><h3>Progetti Sportivi</h3><p>Psicomotricità, giochi di squadra e rispetto delle regole, divertendosi.</p></div>
         </article>
         <article class="card card--photo reveal">
-          <div class="photo photo--oro" data-caption="Foto: doposcuola con studio assistito"><svg><use href="#i-book"/></svg></div>
+          <div class="photo photo--img photo--oro" data-caption="Doposcuola con studio assistito"><img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=900&q=80" alt="Doposcuola con studio assistito" loading="lazy"></div>
           <div class="card__body"><span class="tag">Doposcuola</span><h3>Studio Assistito</h3><p>Compiti seguiti da insegnanti, per tornare a casa con il pomeriggio libero.</p></div>
         </article>
         <article class="card card--photo reveal">
-          <div class="photo" data-caption="Foto: centro estivo in giardino"><svg><use href="#i-sun"/></svg></div>
+          <div class="photo photo--img" data-caption="Centro estivo in giardino"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Centro estivo in giardino" loading="lazy"></div>
           <div class="card__body"><span class="tag tag--blu">Estate</span><h3>Centri Estivi</h3><p>Giugno e luglio tra giochi, gite e laboratori, nello stesso ambiente protetto.</p></div>
         </article>
       </div>
@@ -272,6 +280,10 @@
   </section>
 
   <!-- ===== CTA FINALE / OPEN DAY ===== -->
+  <!-- Onda: dalla sezione crema entra il verde menta chiaro -->
+  <div class="onda onda--crema" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C240,20 480,20 720,70 C960,120 1200,110 1440,50 L1440,120 L0,120 Z" fill="#DDF8EF"/></svg>
+  </div>
   <section class="section section--salvia" id="openday">
     <div class="container">
       <div class="openday reveal">
