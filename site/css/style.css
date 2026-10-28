@@ -476,9 +476,8 @@ p { margin: 0 0 1em; }
 .lightbox[hidden] { display: none; }
 .lightbox img { max-width: min(92vw, 720px); max-height: 92vh; border-radius: 12px; box-shadow: var(--shadow-lg); }
 .lightbox__close { position: absolute; top: 16px; right: 20px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--white); color: var(--blu-900); font-size: 1.6rem; line-height: 1; }
-.posters--home { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-.posters--home .poster:nth-child(even) { transform: translateY(18px); }
-.posters--home .poster:nth-child(even):hover { transform: translateY(14px); }
+.posters--home { grid-template-columns: repeat(2, 1fr); gap: 14px; align-items: start; }
+.posters--home .poster:hover { transform: translateY(-4px); }
 @media (max-width: 860px) { .posters { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- Legal pages ---------- */
