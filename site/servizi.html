@@ -112,7 +112,9 @@
           <p class="lead">Da circa vent'anni il servizio è affidato a <strong>Happy Catering di Rita Gioieni</strong>, azienda con trent'anni di esperienza nella ristorazione scolastica. I pasti arrivano ogni giorno dal centro cottura, vicinissimo alla scuola, e vengono serviti dalle insegnanti e dalle suore, che pranzano e assaggiano insieme ai bambini.</p>
           <ul class="checklist">
             <li><svg><use href="#i-check"/></svg><span><strong>Materie prime tracciate</strong> da fornitori romani selezionati e marchi riconosciuti</span></li>
-            <li><svg><use href="#i-check"/></svg><span><strong>Menù differenziati</strong> per Infanzia e Primaria, su 4 settimane, invernale ed estivo</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Menù mensile</strong> per Infanzia e Primaria, su 4 settimane, invernale ed estivo</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Pasto a consumo</strong>: € 6,00 a pasto, si paga solo nei giorni di presenza</span></li>
+            <li><svg><use href="#i-check"/></svg><span><strong>Buoni pasto</strong> acquistabili in segreteria</span></li>
             <li><svg><use href="#i-check"/></svg><span><strong>Diete speciali</strong> per allergie, intolleranze e motivi etico-religiosi, con certificato medico</span></li>
             <li><svg><use href="#i-check"/></svg><span><strong>Doppio controllo</strong>: autocontrollo HACCP del fornitore e ispezioni a sorpresa di ASL e NAS</span></li>
             <li><svg><use href="#i-check"/></svg><span><strong>Educazione alimentare</strong>: il pranzo è anche un momento educativo, insieme alle insegnanti</span></li>
@@ -170,36 +172,70 @@
         </div>
       </div>
 
-      <!-- Widget menù mensile -->
-      <div class="menu-widget reveal" data-menu-widget>
+      <!-- Menù mensile -->
+      <div class="menu-widget reveal" id="menu-mese">
         <div class="menu-widget__head">
           <div>
-            <h3 class="mt-0">Menù Mensile della Mensa</h3>
-            <p class="muted" style="margin:0">Seleziona il mese e scarica il PDF per Infanzia o Primaria.</p>
+            <h3 class="mt-0">Menù Mensile della Mensa · Novembre 2026</h3>
+            <p class="muted" style="margin:0">Infanzia e Primaria · 4 settimane, dal 2 al 27 novembre. Clicca la locandina per ingrandirla oppure consulta la tabella.</p>
           </div>
-          <span class="badge-updated">Aggiornato il 28 ottobre 2026</span>
+          <span class="badge-updated">Aggiornato il 2 novembre 2026</span>
         </div>
-        <div class="menu-month mb-4">
-          <label for="menu-mese" style="font-weight:800;color:var(--blu-900)">Mese</label>
-          <!-- In produzione: popolare dal CMS; i PDF vanno in menu/AAAA-MM-infanzia.pdf e AAAA-MM-primaria.pdf -->
-          <select id="menu-mese">
-            <option value="2026-11" selected>Novembre 2026</option>
-            <option value="2026-10">Ottobre 2026</option>
-            <option value="2026-09">Settembre 2026</option>
-          </select>
+
+        <div class="menu-cost mb-4">
+          <div class="menu-cost__item"><svg><use href="#i-food"/></svg><div><strong>€ 6,00 a pasto</strong><small>Pasto a consumo: si paga solo nei giorni di presenza</small></div></div>
+          <div class="menu-cost__item"><svg><use href="#i-file"/></svg><div><strong>Buoni pasto in segreteria</strong><small>Acquistabili negli orari di apertura della segreteria</small></div></div>
         </div>
-        <div class="grid grid--2">
-          <a class="download" data-menu-link="infanzia" href="#">
-            <div class="download__icon" style="background:var(--salvia-100);color:var(--salvia-600)"><svg><use href="#i-file"/></svg></div>
-            <div><strong>Menù Scuola dell'Infanzia</strong><small><span data-menu-label>Novembre 2026</span> · PDF</small></div>
-            <span class="btn btn--sm btn--blu">Scarica</span>
-          </a>
-          <a class="download" data-menu-link="primaria" href="#">
-            <div class="download__icon" style="background:var(--blu-100);color:var(--blu-700)"><svg><use href="#i-file"/></svg></div>
-            <div><strong>Menù Scuola Primaria</strong><small><span data-menu-label>Novembre 2026</span> · PDF</small></div>
-            <span class="btn btn--sm btn--blu">Scarica</span>
-          </a>
-        </div>
+
+        <a class="menu-poster mb-4" href="assets/menu-2026-11.jpg" data-lightbox title="Apri il menù a tutto schermo">
+          <img src="assets/menu-2026-11.jpg" alt="Menù mensa novembre 2026, Infanzia e Primaria, settimane dal 2 al 27 novembre" loading="lazy">
+          <span>Clicca per ingrandire</span>
+        </a>
+
+        <details class="menu-table-toggle">
+          <summary>Versione tabella del menù di novembre</summary>
+          <div style="overflow-x:auto">
+            <table class="timetable menu-table">
+              <thead><tr><th>Settimana</th><th>Lunedì</th><th>Martedì</th><th>Mercoledì</th><th>Giovedì</th><th>Venerdì</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><strong>1</strong><br><small>2 – 6 nov</small></td>
+                  <td>Pasta al Parmigiano<br>Cotoletta alla milanese<br>Insalatina mista<br>Succo di frutta</td>
+                  <td>Minestra con fagioli<br>Frittatine<br>Spinaci<br>Frutta fresca</td>
+                  <td>Pasta con pesto di zucchine<br>Bocconcini di tacchino<br>Pisellini<br>Succo di frutta</td>
+                  <td>Tortellini al pomodoro<br>Formaggio dolce<br>Carotine julienne<br>Yogurt* o Merendine</td>
+                  <td>Pasta al tonno<br>Bocconcini di pesce<br>Medaglioni di patate al forno<br>Frutta fresca</td>
+                </tr>
+                <tr>
+                  <td><strong>2</strong><br><small>9 – 13 nov</small></td>
+                  <td>Brodo vegetale con pastina<br>Polpettine in umido<br>Cavolfiore al limone<br>Succo di frutta</td>
+                  <td>Pasta al ragù<br>Prosciutto cotto<br>Zucchine trifolate<br>Frutta fresca</td>
+                  <td>Risotto al pomodoro<br>Uova strapazzate<br>Insalata di patate<br>Succo di frutta</td>
+                  <td>Passato di verdure e pastina<br>Petti di pollo al limone<br>Insalata di mais e carotine<br>Yogurt* o Merendine</td>
+                  <td>Pasta al pomodoro<br>Bastoncini di pesce al forno<br>Insalatina verde<br>Frutta fresca</td>
+                </tr>
+                <tr>
+                  <td><strong>3</strong><br><small>16 – 20 nov</small></td>
+                  <td>Minestra con lenticchie<br>Hamburger di manzo<br>Spinaci<br>Succo di frutta</td>
+                  <td>Pasta al pesto<br>Frittatine<br>Pisellini<br>Frutta fresca</td>
+                  <td>Pasta al Parmigiano<br>Bocconcini di pollo alla mugnaia<br>Insalatina mista<br>Succo di frutta</td>
+                  <td>Pasta al pomodoro<br>Polpettone al forno<br>Carotine julienne<br>Yogurt* o Merendine</td>
+                  <td>Risotto con crema di zucchine<br>Polpettine di pesce<br>Purè di patate<br>Frutta fresca</td>
+                </tr>
+                <tr>
+                  <td><strong>4</strong><br><small>23 – 27 nov</small></td>
+                  <td>Minestra con ceci<br>Bocconcini di pollo panati<br>Insalatina verde<br>Succo di frutta</td>
+                  <td>Pasta al Parmigiano<br>Arista al forno<br>Zucchine trifolate<br>Frutta fresca</td>
+                  <td>Pasta al pomodoro<br>Uova strapazzate<br>Patate arrosto<br>Succo di frutta</td>
+                  <td>Risotto al forno<br>Formaggio dolce<br>Fagiolini<br>Yogurt* o Merendine</td>
+                  <td>Pasta al pomodoro<br>Fantasie di merluzzo<br>Bieta al limone<br>Frutta fresca</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="form-note mt-3">Poiché l'azienda lavora quasi esclusivamente con prodotti freschi, a causa di disguidi nelle forniture, per motivi di mercato o per stagionalità dei prodotti stessi, si riserva il diritto di variare o sostituire una pietanza con prodotti surgelati, al fine di garantire sempre la freschezza e la genuinità del pasto.</p>
+        </details>
+
         <p class="form-note mt-3">Per richiedere una dieta speciale, scrivi a <a href="mailto:segreteria.stbg@gmail.com">segreteria.stbg@gmail.com</a> allegando il certificato medico.</p>
       </div>
     </div>
@@ -288,7 +324,7 @@
       <div class="grid" style="gap:12px">
         <div class="notice reveal"><time><b>12</b>NOV</time><div><strong>Colloqui individuali Primaria</strong><p>Prenotazione aperta sul registro elettronico fino al 10 novembre. Colloqui in presenza dalle 16:30.</p></div></div>
         <div class="notice reveal"><time><b>—</b>VISITE</time><div><strong>Visite su appuntamento</strong><p>Visita guidata e incontro con la Direttrice in un giorno e un orario concordati con la famiglia, tutto l'anno.</p></div></div>
-        <div class="notice reveal"><time><b>01</b>DIC</time><div><strong>Nuovo menù invernale</strong><p>Da dicembre entra in vigore il menù invernale. Scaricabile nella sezione Mensa.</p></div></div>
+        <div class="notice reveal"><time><b>01</b>DIC</time><div><strong>Nuovo menù invernale</strong><p>Da dicembre entra in vigore il menù invernale. Consultabile nella sezione Mensa.</p></div></div>
       </div>
     </div>
   </section>
@@ -353,6 +389,11 @@
   <a class="is-menu" href="servizi.html#mensa"><svg><use href="#i-food"/></svg>Menù</a>
   <a class="is-cta" href="../index.html#openday"><svg><use href="#i-cal"/></svg>Open Day</a>
 </nav>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Chiudi">&times;</button>
+  <img src="" alt="">
+</div>
 
 <script src="js/main.js"></script>
 </body>

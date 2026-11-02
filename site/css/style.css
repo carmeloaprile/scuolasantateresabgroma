@@ -378,6 +378,33 @@ p { margin: 0 0 1em; }
 .badge-updated { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; font-weight: 800; color: var(--salvia-600); background: var(--salvia-100); padding: 6px 12px; border-radius: 999px; }
 .badge-updated::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--salvia-600); }
 
+/* Costo pasto e buoni */
+.menu-cost { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.menu-cost__item { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: var(--oro-100); border-radius: var(--radius-sm); border: 1px solid var(--crema-300); }
+.menu-cost__item svg { width: 28px; height: 28px; flex: none; color: var(--oro-600); }
+.menu-cost__item strong { display: block; color: var(--blu-900); font-size: 1.05rem; }
+.menu-cost__item small { color: var(--ink-700); }
+
+/* Locandina menù */
+.menu-poster { display: block; position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--crema-300); box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
+.menu-poster:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.menu-poster img { display: block; width: 100%; height: auto; }
+.menu-poster span { position: absolute; right: 12px; bottom: 12px; font-size: .8rem; font-weight: 800; color: var(--blu-900); background: rgba(255,255,255,.92); padding: 6px 12px; border-radius: 999px; }
+
+/* Tabella menù */
+.menu-table-toggle { background: var(--crema-50); border-radius: var(--radius-sm); border: 1px solid var(--crema-300); padding: 0 20px; }
+.menu-table-toggle summary { cursor: pointer; padding: 16px 0; font-weight: 800; color: var(--blu-900); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.menu-table-toggle summary::-webkit-details-marker { display: none; }
+.menu-table-toggle summary::after { content: "+"; font-size: 1.4rem; color: var(--oro-600); font-weight: 400; transition: transform .2s; }
+.menu-table-toggle[open] summary::after { transform: rotate(45deg); }
+.menu-table-toggle > div, .menu-table-toggle > p { margin-bottom: 18px; }
+.menu-table { min-width: 860px; font-size: .9rem; }
+.menu-table td { white-space: normal; vertical-align: top; line-height: 1.55; }
+.menu-table td:nth-child(2) { white-space: normal; }
+.menu-table th:first-child, .menu-table td:first-child { width: 90px; text-align: center; background: var(--crema-100); }
+.menu-table td:first-child strong { font-size: 1.4rem; font-family: var(--font-display); }
+.menu-table td:first-child small { color: var(--ink-500); }
+
 /* ---------- Timetable ---------- */
 .timetable { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
 .timetable th, .timetable td { padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--crema-300); }
@@ -474,7 +501,7 @@ p { margin: 0 0 1em; }
 .poster span { display: block; padding: 12px 14px; font-weight: 800; font-size: .9rem; color: var(--blu-900); }
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(21,42,77,.88); display: grid; place-items: center; padding: 24px; }
 .lightbox[hidden] { display: none; }
-.lightbox img { max-width: min(92vw, 720px); max-height: 92vh; border-radius: 12px; box-shadow: var(--shadow-lg); }
+.lightbox img { max-width: 92vw; max-height: 92vh; border-radius: 12px; box-shadow: var(--shadow-lg); }
 .lightbox__close { position: absolute; top: 16px; right: 20px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--white); color: var(--blu-900); font-size: 1.6rem; line-height: 1; }
 .posters--home { grid-template-columns: repeat(2, 1fr); gap: 14px; align-items: start; }
 .posters--home .poster:hover { transform: translateY(-4px); }
